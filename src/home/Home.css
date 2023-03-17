@@ -1,0 +1,172 @@
+.animate-case {
+  width: 100%;
+  background-color: rgb(238, 238, 144);
+}
+.animate {
+  text-align: center;
+  width: 400px;
+  position: relative;
+
+  animation-name: joel;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+.animate p {
+  font-size: 0.6rem;
+}
+
+@keyframes joel {
+  0% {
+    left: 0;
+    top: 0px;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    left: 600px;
+    top: 0px;
+  }
+  50% {
+    left: 1200px;
+    top: 0px;
+  }
+  75% {
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    left: 600;
+    top: 0px;
+    border-radius: 0 0 0 0;
+  }
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+.big-link {
+  font-size: 1rem;
+}
+.big-link:hover {
+  background-color: aqua;
+}
+.logo {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 6.5%;
+}
+.intro-image {
+  display: flex;
+  width: 80%;
+}
+.intro-image img {
+  width: 70%;
+}
+
+.home-body {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 3rem;
+}
+.section2 {
+  margin-top: 3rem;
+}
+
+.flex {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flex .text {
+  padding-top: 3rem;
+}
+.flex img {
+  width: 50%;
+}
+.meye {
+  margin-top: 3rem;
+  font-family: cursive;
+  color: rgb(2, 27, 35);
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-style: italic;
+}
+.flex1 {
+  background-color: rgb(238, 238, 144);
+}
+.flex2 {
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+  background-color: #444;
+}
+.img-text {
+  margin-top: 2rem;
+  color: white;
+}
+.s2 {
+  padding-top: 4rem;
+  background-color: #fff;
+}
+.headquarter li {
+  line-height: 2rem;
+}
+.headquarter li span {
+  font-size: 0.6rem;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .meye {
+    font-size: 2rem;
+  }
+  .home-body img {
+    height: 30vh;
+  }
+  .flex {
+    display: block;
+  }
+  .flex img {
+    height: 50vh;
+  }
+  .hero .welcomNote .hero2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero .welcomNote .hero2 {
+    font-size: 1.5rem;
+  }
+  .flex img {
+    width: 65%;
+    height: 85vh;
+  }
+}
+@media (max-width: 700px) {
+  .flex img {
+    width: 65%;
+    height: 85vh;
+  }
+}
+@media (max-width: 600px) {
+  .flex img {
+    width: 75%;
+    height: 76vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .flex img {
+    width: 100%;
+    height: 60vh;
+  }
+  .headquarter li {
+    line-height: 1.5rem;
+  }
+}

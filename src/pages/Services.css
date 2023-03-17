@@ -1,0 +1,32 @@
+.services-container {
+  background-color: hsl(205, 86%, 17%);
+
+  margin-top: 3rem;
+  border-radius: 22px;
+}
+.services {
+  width: 80%;
+  margin: auto;
+  background-color: #d0dfd7;
+  border-radius: 10px;
+}
+.service {
+  padding: 0.5rem;
+  border-bottom: 1px dashed rgb(56, 85, 87);
+  border-radius: 10px;
+  text-align: center;
+}
+.service a {
+  font-size: 1.5rem;
+  color: rgb(21, 20, 23);
+  font-weight: 800;
+}
+.service a:hover {
+  background-color: aliceblue;
+}
+@media (max-width: 500px) {
+  .service a {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

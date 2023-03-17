@@ -1,0 +1,11 @@
+.hero .hero2 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.hero h1 span {
+  color: darkgoldenrod;
+}

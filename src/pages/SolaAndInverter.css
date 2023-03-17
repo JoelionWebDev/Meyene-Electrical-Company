@@ -1,0 +1,38 @@
+.solar1 {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.solar1 img {
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .solar1 {
+    flex-direction: column;
+  }
+  .solar1 img {
+    width: 100%;
+  }
+}
+.solar2 {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.solar2 img {
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .solar2 {
+    flex-direction: column;
+  }
+  .solar2 img {
+    width: 100%;
+  }
+}
