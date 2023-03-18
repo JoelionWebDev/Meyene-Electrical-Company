@@ -1,6 +1,5 @@
 import React from "react";
 import { social } from "./data";
-import "./social.css";
 
 const Social = () => {
   return (
@@ -23,6 +22,10 @@ const Social = () => {
             );
           })}
         </ul>
+        <p>
+          Meyene Electrical Company Headquarter is located At NO: 4 Oloruntegbe
+          Street, Ayeteju, Ibeju-Lekki, Lagos State.
+        </p>
       </div>
     </main>
   );

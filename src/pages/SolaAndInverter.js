@@ -38,7 +38,7 @@ const SolarAndInverter = () => {
             <li>1 blender</li>
           </ol>
         </div>
-        <img src="/images/solar1.jpg" alt="" />
+        <img src="/images/inverter1.jpg" alt="" />
       </section>
       <hr />
       <section className="solar2">

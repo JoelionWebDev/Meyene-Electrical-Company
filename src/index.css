@@ -142,7 +142,7 @@ p {
 
 /* section */
 .section {
-  width: 90vw;
+  width: 100%;
   margin: 0 auto;
   max-width: var(--max-width);
 }
@@ -153,7 +153,7 @@ p {
 
 @media screen and (min-width: 992px) {
   .section {
-    width: 95vw;
+    width: 100%;
   }
 }
 nav {
@@ -210,10 +210,11 @@ nav {
   overflow: hidden;
   transition: var(--transition);
   position: fixed;
-  background-color: rgba(12, 73, 50, 0.3);
+  background-color: rgba(12, 73, 50, 0.8);
   border-radius: 2rem;
-  width: 50vw;
+  width: 50%w;
   height: 30vh;
+  margin: auto;
 }
 .show-container {
   height: 10rem;
@@ -264,7 +265,7 @@ nav {
 @media (max-width: 650px) {
   .links-container ul .active {
     margin-left: 1rem;
-    width: 50rem;
+    /* width: 50rem; */
   }
 }
 
@@ -318,30 +319,7 @@ nav {
   align-items: center;
   background-color: var(--clr-green-dark);
 }
-.form h2 {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 800;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-}
 
-.form input {
-  width: 35rem;
-  padding: 2rem;
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-}
-.form button {
-  width: 15rem;
-  padding: 2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
-  background-color: var(--clr-grey-1);
-}
 .social-icon {
   width: 100%;
   background-color: #363434;
@@ -396,14 +374,11 @@ nav {
   }
 }
 
-@media (max-width: 800px) {
-}
-
 @media (max-width: 795px) {
   .links-container {
     margin-top: 2rem;
     margin-left: 1rem;
-    width: 15rem;
+    width: 12rem;
     border-radius: 0.2rem;
   }
   .links a {

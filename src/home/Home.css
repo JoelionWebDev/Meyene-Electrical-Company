@@ -1,45 +1,12 @@
-.animate-case {
-  width: 100%;
-  background-color: rgb(238, 238, 144);
-}
 .animate {
-  text-align: center;
-  width: 400px;
-  position: relative;
-
-  animation-name: joel;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
+  background-color: rgb(197, 205, 50);
 }
 .animate p {
-  font-size: 0.6rem;
+  text-align: center;
+  font-size: 0.5rem;
+  color: blue;
 }
 
-@keyframes joel {
-  0% {
-    left: 0;
-    top: 0px;
-    border-radius: 0 0 0 0;
-  }
-  25% {
-    left: 600px;
-    top: 0px;
-  }
-  50% {
-    left: 1200px;
-    top: 0px;
-  }
-  75% {
-    left: 0;
-    top: 0px;
-  }
-  100% {
-    left: 600;
-    top: 0px;
-    border-radius: 0 0 0 0;
-  }
-}
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
@@ -168,5 +135,8 @@ p {
   }
   .headquarter li {
     line-height: 1.5rem;
+  }
+  .meye {
+    font-size: 1rem;
   }
 }

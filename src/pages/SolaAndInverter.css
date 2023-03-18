@@ -8,15 +8,6 @@
 .solar1 img {
   width: 70%;
 }
-
-@media (max-width: 800px) {
-  .solar1 {
-    flex-direction: column;
-  }
-  .solar1 img {
-    width: 100%;
-  }
-}
 .solar2 {
   width: 80%;
   margin: auto;
@@ -29,6 +20,12 @@
 }
 
 @media (max-width: 800px) {
+  .solar1 {
+    flex-direction: column;
+  }
+  .solar1 img {
+    width: 100%;
+  }
   .solar2 {
     flex-direction: column;
   }

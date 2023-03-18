@@ -63,7 +63,10 @@ const Home = () => {
 
                 <li>
                   <h5> Email us through: </h5>{" "}
-                  <span> meyeneelectricalcompany@gmail.com</span>
+                  <span>
+                    {" "}
+                    meyeneelectricalcompany <br /> @gmail.com
+                  </span>
                 </li>
               </ul>
             </div>
@@ -93,12 +96,12 @@ const Home = () => {
           <section className="s2">
             <img src="/images/work.jpg" width="70%" alt="" />
           </section>
-          <section>
+          <section className="s2">
             <h5>
-              We can reach you from anywhere in the world, Do good to reach us{" "}
-              <br /> through any our our social media handles
+              You can reach us from anywhere in the world, Do good to reach us{" "}
+              <br /> through any of our social media handles
             </h5>
-            <img src="/images/anywhere.jpg" alt="" />
+            <img src="/images/anywhere.jpg" width="50%" alt="" />
           </section>
         </div>
         <Social />
