@@ -12,11 +12,11 @@ const Home = () => {
           <Logo />
           <Hero />
         </div>
-        <div className="animate-case">
+     
           <div className="animate">
             <p>Meyene Electrical Company by JoelionWebDev</p>
           </div>
-        </div>
+      
 
         <div className="home-body">
           <p>
