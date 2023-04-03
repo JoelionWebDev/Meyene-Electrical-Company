@@ -62,7 +62,11 @@ p {
   font-style: italic;
 }
 .flex1 {
-  background-color: rgb(238, 238, 144);
+  background-color: hsl(205, 86%, 17%);
+  color: #fff;
+}
+.flex1 p {
+  color: #fff;
 }
 .flex2 {
   padding-top: 1.2rem;

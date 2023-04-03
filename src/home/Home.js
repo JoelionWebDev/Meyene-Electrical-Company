@@ -12,11 +12,10 @@ const Home = () => {
           <Logo />
           <Hero />
         </div>
-     
-          <div className="animate">
-            <p>Meyene Electrical Company by JoelionWebDev</p>
-          </div>
-      
+
+        <div className="animate">
+          <p>Meyene Electrical Company by JoelionWebDev</p>
+        </div>
 
         <div className="home-body">
           <p>
@@ -42,7 +41,7 @@ const Home = () => {
 
           <h1 className="meye">MEYENE ELECTRICAL</h1>
           <div className="flex flex1">
-            <img src="/images/contract img.jpg" alt="" />
+            <img src="/images/contract img.jpeg" alt="" />
             <div className="text">
               <h3>
                 Meyene Electrical Company <br /> Headquarter
@@ -96,12 +95,16 @@ const Home = () => {
           <section className="s2">
             <img src="/images/work.jpg" width="70%" alt="" />
           </section>
+
           <section className="s2">
             <h5>
               You can reach us from anywhere in the world, Do good to reach us{" "}
               <br /> through any of our social media handles
             </h5>
             <img src="/images/anywhere.jpg" width="50%" alt="" />
+          </section>
+          <section className="s2">
+            <img src="/images/monday.jpg" width="70%" alt="" />
           </section>
         </div>
         <Social />

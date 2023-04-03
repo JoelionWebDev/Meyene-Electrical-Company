@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+import { data } from "../data";
 import Logo from "../home/logo";
 import Social from "../Social";
 import "./Project.css";
 
 const Projects = () => {
+  const [people, setPeople] = useState(data);
+  const [index, setIndex] = React.useState(0);
+
+  useEffect(() => {
+    const lastIndex = people.length - 1;
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, people]);
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 5000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
   return (
-    <main>
+    <main className="body">
       <div className="heroContainer">
         <Logo />
         <div className="hero">
@@ -16,72 +39,41 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <section className="pro1">
-        <div className="p1">
-          <img src="/images/p18.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p20.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p21.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p22.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p1.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p17.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p16.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p15.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p14.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p13.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p7.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p8.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p9.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p10.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p11.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p1.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p4.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p5.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p6.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p3.jpg" alt="project name" />
-        </div>
-        <div className="p1">
-          <img src="/images/p2.jpg" alt="project name" />
+
+      <section className="section">
+        <div className="section-center">
+          {people.map((person, personIndex) => {
+            const { id, image, title } = person;
+
+            let position = "nextSlide";
+            if (personIndex === index) {
+              position = "activeSlide";
+            }
+            if (
+              personIndex === index - 1 ||
+              (index === 0 && personIndex === people.length - 1)
+            ) {
+              position = "lastSlide";
+            }
+
+            return (
+              <article className={position} key={id}>
+                <img src={image} alt={title} className="person-img" />
+              </article>
+            );
+          })}
+          <h4 className="quality">We deliver qaulity work</h4>
+          <button className="prev" onClick={() => setIndex(index - 1)}>
+            <FiChevronLeft />
+          </button>
+          <button className="next" onClick={() => setIndex(index + 1)}>
+            <FiChevronRight />
+          </button>
         </div>
       </section>
-      <Social />
+      <div className="social">
+        <Social />
+      </div>
     </main>
   );
 };
