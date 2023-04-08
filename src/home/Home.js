@@ -4,6 +4,7 @@ import Hero from "./hero";
 import Logo from "./logo";
 import Social from "../Social";
 import { Link } from "react-router-dom";
+import video from "../video/vid1.mp4";
 const Home = () => {
   return (
     <React.Fragment>
@@ -70,6 +71,16 @@ const Home = () => {
               </ul>
             </div>
           </div>
+
+          <video
+            style={{ backgroundColor: "black" }}
+            width="750"
+            height="500"
+            controls
+          >
+            <source src={video} type="video/mp4" />
+          </video>
+
           <section className="section2">
             <h2>Our work quality</h2>
             <p>
