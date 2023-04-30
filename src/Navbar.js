@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import "./nav.css";
 const Navbar = () => {
   const navStyle = ({ isActive }) => {
     return {};
