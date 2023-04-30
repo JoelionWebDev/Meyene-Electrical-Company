@@ -18,6 +18,25 @@ const About = () => {
         <h2> Meneye Monday</h2>
         <img src="images/monday.jpg" width="15%" alt="" />
       </section>
+      <div
+        className="flex"
+        style={{ backgroundColor: "white", paddingTop: "2rem" }}
+      >
+        <a href="https://wa.me/message/YLOK7D7K3PQ2L1">
+          {" "}
+          <h1 style={{ color: "green" }}>
+            <p> Message Us directly through our WhatsApp</p>
+            <i class="fa-brands fa-whatsapp"></i>
+          </h1>
+        </a>{" "}
+        <a href="https://t.me/Meyeneelectricalcompany">
+          {" "}
+          <h1 style={{ color: "green" }}>
+            <p> Or our Telegram</p>
+            <i class="fa-brands fa-telegram"></i>
+          </h1>
+        </a>{" "}
+      </div>
       <section className="s2">
         <p>
           When it comes to all the related services listed in our service page,
