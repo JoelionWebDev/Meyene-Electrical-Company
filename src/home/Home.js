@@ -93,9 +93,10 @@ const Home = () => {
           </div>
 
           <video
+            className="video"
             style={{ backgroundColor: "black" }}
             width="750"
-            height="500"
+            height="600"
             controls
           >
             <source src={video} type="video/mp4" />
